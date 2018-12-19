@@ -1,5 +1,5 @@
 {
-  "name": "static-expiry",
+  "name": "@tofixx/static-expiry",
   "version": "1.0.2",
   "description": "Connect middleware for static files that sets caching response headers as well as generates and rewrites fingerprinted urls.",
   "keywords": [
@@ -19,9 +19,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:paulwalker/connect-static-expiry.git"
+    "url": "git@github.com:tofixx/connect-static-expiry.git"
   },
-  "author": "Paul Walker",
+  "author": "Tobias Wollowski",
   "dependencies": {
     "@types/connect": "^3.4.30",
     "@types/node": "^6.0.51",
