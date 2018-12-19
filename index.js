@@ -215,7 +215,7 @@ function fingerprintAssetUrl(assetUrl) {
  * @api private
  */
 function furl(assetUrl, prodAssetUrl) {
-  if (expiry.options.useSecond && prodAssetUrl) assetUrl = prodAssetUrl;
+  if (expiry.options.useSecond && prodAssetUrl && typeof prodAssetUrl === 'string') assetUrl = prodAssetUrl;
   if (!expiry.options.enabled) return assetUrl;
   var parsedUrl = url.parse(assetUrl, true, true)
     , urlCacheKey = parsedUrl.path
